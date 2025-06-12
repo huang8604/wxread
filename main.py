@@ -25,6 +25,7 @@ FIX_SYNCKEY_URL = "https://weread.qq.com/web/book/chapterInfos"
 # 生成2到10分钟之间的随机整数秒
 sleep_seconds = random.randint(120, 600)  
 logging.info(f"📕 sleep time: {sleep_seconds}")
+logging.info(f"📕 阅读时长: {READ_NUM}")
 time.sleep(sleep_seconds)
 logging.info(f"📕 sleep over ")
 
