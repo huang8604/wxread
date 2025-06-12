@@ -22,6 +22,10 @@ RENEW_URL = "https://weread.qq.com/web/login/renewal"
 FIX_SYNCKEY_URL = "https://weread.qq.com/web/book/chapterInfos"
 
 
+# 生成2到10分钟之间的随机整数秒
+sleep_seconds = random.randint(120, 600)  
+time.sleep(sleep_seconds)
+
 def encode_data(data):
     """数据编码"""
     return '&'.join(f"{k}={urllib.parse.quote(str(data[k]), safe='')}" for k in sorted(data.keys()))
